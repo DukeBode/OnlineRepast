@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Cooker</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="shortcut icon" href="file:///favicon.ico">
+
+  <link rel="stylesheet" href="menu_files/style.css">
+  <link rel="stylesheet" href="menu_files/jcarousel.css">
+
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="menu_files/modernizr-1.js"></script>
+</head>
+
+<body>
+  
+<!-- LOGIN POP UPS -->
+<div id="popup-overlay"></div>
+<div class="popup" id="popup-login">
+	<h2>客官这边请</h2>
+	<hr class="separator">
+	<form method="post" action="" class="form clearfix">
+		<fieldset>
+			<label for="login-username">客官名讳:</label>
+			<input name="" id="login-username" class="input text" type="text">
+			<label for="login-password">进店密令:</label>
+			<input name="" id="login-password" class="input text" type="password">
+		</fieldset>
+	</form>
+	<hr class="separator">
+	<button class="button submit">进店</button>
+	<div class="links"><a href="#">忘记密令 </a> | <a href="#" class="register-btn"> 进店登记</a></div>
+	<a class="close" href="#"></a>
+</div>
+<div class="popup" id="popup-register">
+		<h2>进店登记</h2>
+		<hr class="separator">
+		<form method="post" action="" class="form clearfix">
+			<fieldset>
+				<label for="login-username">客官名讳:</label>
+				<input name="" id="login-username" class="input text" type="text">
+				<label for="login-email">您的邮箱:</label>
+				<input name="" id="login-email" class="input text error" value="" type="text">
+				<label for="login-password">进店密令:</label>
+				<input name="" id="login-password" class="input text" type="password">
+				<label for="login-confirm-password">确认密令:</label>
+				<input name="" id="login-confirm-password" class="input text" type="password">
+			</fieldset>
+		
+			<hr class="separator">
+			
+			<div class="checks">
+				<div class="check-row">
+					<label><input class="input checkbox" type="checkbox">I have read and agree to the <a href="#">Terms &amp; Conditions</a></label>
+				</div>
+				<div class="check-row">
+					<label><input class="input checkbox" type="checkbox">I agree to recieve promotional mails</label>
+				</div>
+			</div>
+
+			<button class="button submit">正在登记</button>
+		</form>
+		<a class="close" href="#"></a>
+	</div>
+<!-- END LOGIN POP UPS -->
+  <div class="
+wrapper ">
+    <header>
+      <div class="top-nav">
+        <nav>
+          <ul>
+            <li><a href="#" id="login-btn">登录</a></li>
+            <li><a href="#" class="register-btn">注册</a></li>
+            <li><a href="contact.html">配送地址</a></li>
+            <li><a href="menu.html">菜单</a></li>
+          </ul>
+        </nav>
+        
+        <form class="search-form" method="post">
+          <input value="search..." class="search" type="text">
+          <input class="search-submit" value="" type="submit">
+        </form>
+  
+      </div>
+      <a href="index.html" class="logo"><img src="menu_files/logo.png" alt="your logo"></a>
+			<nav class="main-menu">
+				
+			</nav>
+    </header>
+		<div class="content full-content clearfix">
+
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">主页</a></li>
+					<li>菜单</li>
+				</ul>
+			</div>
+			
+			<div class="product-menu-header">
+				<h2>菜单</h2>
+			</div>
+			
+			<div class="product-menu-holder">
+				<div>
+					<div class="left-part">
+						<h3>萌萌家甜品</h3>
+						<h4><span class="text">SWEET</span><span class="line"></span></h4>
+						<ul>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/meal-2.png" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">功夫熊猫</a></h5>
+									<span>￥19.00</span>
+								</div>
+								<div class="description">萌萌的外表勾起你的味蕾，浓郁的巧克力，鲜美的奶油，松软的蛋糕。让人欲罢不能</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_003.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">浆果慕斯</a></h5>
+									<span>￥18.00</span>
+								</div>
+								<div class="description">
+									蛋糕分为两层,底座为粉红色,给人一种很温馨的感觉,上层的奶油香软可口,甜而不腻.		
+								</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/meal-4.png" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">四季沐歌</a></h5>
+									<span>￥18.00</span>
+								</div>
+								<div class="description">清凉的沙冰刺激着你的味觉。淡淡的草莓味在口中化开。给你冰凉一夏</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/meal-4%25202.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">抹茶麻薯</a></h5>
+									<span>￥15.00</span>
+								</div>
+								<div class="description">清新的颜色惹人醉。Q爽的糯米在口中舞蹈。抹茶的清香散开，回味无穷</div>
+							</li>
+						</ul>
+						<h3>萌萌家冷饮</h3>
+						<h4><span class="text">COOL</span><span class="line"></span></h4>
+						<ul>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/meal-6.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">See You Tomorrow</a></h5>
+									<span>￥27.00</span>
+								</div>
+								<div class="description">颜色恰似冰与火的结合,在炎炎的夏日里给你带来清凉和舒爽,是你不容错过的夏日饮品.</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">夏日时光</a></h5>
+									<span>￥10.00</span>
+								</div>
+								<div class="description">
+								采用"鲜奶液和鲜果酱"结合而成的软式冰淇淋,口感细腻、柔滑、清凉,是夏日的最佳饮品.
+								</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_007.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">冰美人</a></h5>
+									<span>￥9.00</span>
+								</div>
+								<div class="description">
+										主要以"奶油"为原料制作的冰淇淋，口感润滑舒爽，其中的有机酸、丹宁和各种维生素，可以给人体提供所需要的营养物质。	
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="right-part">
+						<h3>萌萌家主菜</h3>
+						<h4><span class="text">DELICIOUS</span><span class="line"></span></h4>
+						<ul>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_005.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">水煮肉片</a></h5>
+									<span>￥30.00</span>
+								</div>
+								<div class="description">
+										肉味香辣,软嫩,易嚼.
+                                     	吃时肉嫩菜鲜,汤红油亮,麻辣味浓,最易下饭,是家常美食之一.
+                                        特色是"麻,辣,鲜,香".	
+								</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_006.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">酿皮子</a></h5>
+									<span>￥28.00</span>
+								</div>
+								<div class="description">
+									酿皮绵软润滑,酸辣筋斗,柔韧可口,爽口开胃,经济实惠.	
+								</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_004.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">开胃菜</a></h5>
+									<span>￥18.00</span>
+								</div>
+								<div class="description">
+										开胃菜又称开胃小菜,种类为小点心,味道清新,色泽鲜艳.
+								</div>
+							</li>
+						</ul>
+						<h4><span class="text">WONDERFUL</span><span class="line"></span></h4>
+						<ul>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_008.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">梅菜扣肉</a></h5>
+									<span>￥30.00</span>
+								</div>
+								<div class="description">
+										特色传统名菜,粤菜客家菜,肉烂味香,咸中略带甜味,肥而不腻,是一道色泽油润,香气浓郁的美味佳肴.	
+								</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_002.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">酱爆鱿鱼花</a></h5>
+									<span>￥37.00</span>
+								</div>
+								<div class="description">
+									酱香味和鱿鱼相得益彰，色泽棕黄，柔软脆嫩，酱香扑鼻，佐酒下饭均宜.	
+								</div>
+							</li>
+							<li>
+								<div class="img-holder"><div class="canvas"></div><img src="menu_files/a_009.jpg" alt="" height="80" width="80"></div>
+								<div class="price">
+									<h5><a href="#">清炒虾仁</a></h5>
+									<span>￥31.00</span>
+								</div>
+								<div class="description">
+										清炒虾仁是传统名菜，属于苏帮菜的一种，即以虾仁为主要材料炒制的菜肴。清炒虾仁因其清淡爽口，易于消化，老幼皆宜。
+								</div>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+		<footer>
+			<div class="footer-holder">
+				
+						<div class="newsletter">
+							<div class="quote">
+								<h6>通讯地址</h6>
+								<p>兰州理工大学校本部14号楼122号萌萌哒外卖 电话：1512469876 QQ：574569843 微信公众号;MMD外卖</p>
+								
+							</div>
+						</div>
+						<div class="links first">
+							<h6>萌萌关注</h6>
+							<ul>
+								<li class="facebook"><a href="#">Facebook</a></li>
+								<li class="twitter"><a href="#">Twitter</a></li>
+								<li class="rss"><a href="#">Rss feed</a></li>
+							</ul>
+						</div>
+						<div class="links">
+							<h6>萌萌支付</h6>
+							<ul>
+								<li><a href="#">支付宝</a></li>
+								<li><a href="#">微信</a></li>
+								<li><a href="#">银行卡</a></li>
+								<li><a href="#">财付通</a></li>
+								<li><a href="#">银联</a></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="links">
+							<h6>萌萌菜单</h6>
+							<ul>
+								<li></li>
+								<li><a href="#">萌萌家甜品</a></li>
+								<li><a href="#">萌萌家小炒</a></li>
+								<li><a href="#">萌萌家冷饮</a></li>
+								<li><a href="#">萌萌家披萨和拼盘</a></li>
+								<li><a href="#">萌萌家主食</a></li>
+							</ul>
+						</div>
+						<div class="credits clearfix">@m萌萌哒外卖
+						</div>
+			</div>
+    </footer>
+
+
+	
+	<script type="text/javascript" src="menu_files/jquery-1.js"></script>
+  <script src="menu_files/jquery.js"></script>
+  <script src="menu_files/script.js"></script>
+  <script src="menu_files/jquery_002.js"></script>
+	
+	<script type="text/javascript">
+	// FRONT SLIDER STARTER
+jQuery(document).ready(function() {
+jQuery('#mycarousel').jcarousel({
+auto: 3,
+wrap: 'last',
+scroll: 1,
+animation: 'slow',
+initCallback: mycarousel_initCallback,
+});
+}); 
+	</script>
+
+</body></html>
